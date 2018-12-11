@@ -14,3 +14,5 @@ docker run --rm -p 8080:80 -v $(pwd)/marist-mscs621-devin/htdocs:/var/www/html p
 Go to [Host IP Address]:8080 and you should see the application webpage
 
 ## Architecture diagram
+
+![Architecture Diagram Image] https://github.com/dtoverington/marist-mscs621-devin/raw/master/docs/images/Cloud_Computing_Final_Project_Diagram.png
