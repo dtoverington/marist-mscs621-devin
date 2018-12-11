@@ -1,5 +1,5 @@
 <style>
-font-family:sans-serif;
+body {font-family:sans-serif;}
 </style>
 <h1>Image Analyzer</h1>
 <form name="image" action="index.php" method="post">
