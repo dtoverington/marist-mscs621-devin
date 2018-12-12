@@ -15,4 +15,6 @@ Go to [Host IP Address]:8080 and you should see the application webpage
 
 ## Architecture diagram
 
+The project is made up of two primary components. First, the Amazon AWS EC2 virtual server that is running the container with the web application and second, the IBM cloud Watson Visual Recognition APIs. The server utilizes an Apache/PHP based docker container to execute the application and communicate with the IBM API over the Internet. I also have another instance of the same application running on a local virtual server that connects to the same IBM API.
+
 ![Architecture Diagram Image](https://github.com/dtoverington/marist-mscs621-devin/raw/master/docs/images/Cloud_Computing_Final_Project_Diagram.png)
