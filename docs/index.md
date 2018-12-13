@@ -1,20 +1,9 @@
-# marist-mscs621-devin
+# Image Analyzer
 
 ## Introduction
 
-This is a simple web application that utilizes the Watson Visual Recognition API in a single page PHP webapp to demonstrate how containers can be used to deploy web applications that utilize cloud-based APIs.
+This application is designed to leverage the power of the cloud to analyze images on the internet quickly and accurately. The single page PHP application requires only a lightweight docker container to run on a server while the heavy lifting is taken care of by IBM's Watson Visual Recognition API. The docker application can be deployed anywhere - from local physical servers to cloud based virtual machines around the world. 
 
-## Deployment
-The webapp is deployed using the official PHP Apache docker container and runs a simple PHP file as the application. Steps to download and deploy application are below.
-```
-git clone https://github.com/dtoverington/marist-mscs621-devin.git
+## The Future of Cloud Applications
 
-docker run --rm -p 8080:80 -v $(pwd)/marist-mscs621-devin/htdocs:/var/www/html php:apache
-```
-Go to [Host IP Address]:8080 and you should see the application webpage
-
-## Architecture diagram
-
-The project is made up of two primary components. First, the Amazon AWS EC2 virtual server that is running the container with the web application and second, the IBM cloud Watson Visual Recognition APIs. The server utilizes an Apache/PHP based docker container to execute the application and communicate with the IBM API over the Internet. I also have another instance of the same application running on a local virtual server that connects to the same IBM API.
-
-![Architecture Diagram Image](https://github.com/dtoverington/marist-mscs621-devin/raw/master/docs/images/Cloud_Computing_Final_Project_Diagram.png)
+Cloud services have been around for many years but recently, with major improvements in computing power, Internet access, and overall accessibility, cloud services are becoming more and more the norm for application developers and mission critical business systems. While simple, this application scratches the surface of the power of these systems. In a very short amount of time, one can deploy this web application and start analyzing images on their own machine or a cloud vm. Container technology goes hand in hand with cloud computing and allows for much faster and fluid development styles. As developers, we no longer need to have multiple servers dedicated to testing, we can deploy multiple containers on a single server or VM and get the same result to the end user. In addition, development on a local machine becomes simpler by creating a simulated environment that can perfectly mimic the production systems. From a business standpoint, the move to cloud and container technologies means less resources in hardware, software, energy, and space to deploy and maintain applications. Cloud computing solves a lot of the barriers to entry that smaller companies experience when they need to start developing and deploying internal applications. Container technologies on top of the cloud further reduce TCO of the servers by allowing multiple applications to easily be put on the same systems.
